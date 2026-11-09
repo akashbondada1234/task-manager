@@ -4,7 +4,11 @@ A responsive, server-rendered task manager built for a Python full-stack learnin
 
 ## Deployment
 
-Deploy this repository on Render using the included `render.yaml` configuration. Render will provide the public application URL after deployment.
+The live application is deployed on Render:
+
+[Open TaskFlow Live Demo](https://taskflow-task-manager-snck.onrender.com)
+
+The included `render.yaml` contains the deployment configuration.
 
 ## Features
 
