@@ -2,7 +2,7 @@
 
 A responsive, server-rendered task manager built for a Python full-stack learning project.
 
-## Live Demo
+## Deployment
 
 Deploy this repository on Render using the included `render.yaml` configuration. Render will provide the public application URL after deployment.
 
@@ -46,9 +46,3 @@ Open http://127.0.0.1:8000.
 ```powershell
 python -c "from main import app; print(app.title)"
 ```
-
-## LinkedIn project description
-
-Built TaskFlow, a responsive task management application using Python, FastAPI, Jinja2, SQLAlchemy, SQLite, HTML, CSS, and JavaScript. The project includes CRUD workflows, dashboard analytics, search and filtering, task completion, and secure image uploads with validation. Through this project I strengthened my understanding of server-side rendering, ORM-based persistence, dependency injection, form handling, and responsive UI design. Developed as part of my learning journey with Fullstack Experts Academy and Innomatics Research Labs/instructors.
-
-Suggested hashtags: `#Python #FastAPI #SQLAlchemy #SQLite #Jinja2 #FullStackDevelopment #WebDevelopment #InnomaticsResearchLabs`
