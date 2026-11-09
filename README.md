@@ -2,6 +2,10 @@
 
 A responsive, server-rendered task manager built for a Python full-stack learning project.
 
+## Live Demo
+
+Deploy this repository on Render using the included `render.yaml` configuration. Render will provide the public application URL after deployment.
+
 ## Features
 
 - FastAPI routes with Jinja2 template inheritance
