@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard · TaskFlow{% endblock %}
+{% block content %}
+<section class="page-header welcome-header"><div><p class="eyebrow">{{ request.state.greeting or 'YOUR WORKSPACE' }}</p><h1>Good to see you<span class="accent-dot">.</span></h1><p class="muted">Here’s an overview of your work today.</p></div><a class="button primary" href="/tasks/new">＋ New task</a></section>
+<section class="stats-grid">
+    <div class="stat-card"><div class="stat-icon blue">▦</div><div><span class="stat-label">Total tasks</span><strong>{{ stats.total }}</strong><small>Across your workspace</small></div></div>
+    <div class="stat-card"><div class="stat-icon amber">◷</div><div><span class="stat-label">Pending</span><strong>{{ stats.pending }}</strong><small>Keep the momentum going</small></div></div>
+    <div class="stat-card"><div class="stat-icon green">✓</div><div><span class="stat-label">Completed</span><strong>{{ stats.completed }}</strong><small>Great work so far</small></div></div>
+    <div class="stat-card progress-stat"><div class="stat-icon purple">↗</div><div><span class="stat-label">Completion rate</span><strong>{{ stats.percentage }}%</strong><div class="mini-progress"><span style="width: {{ stats.percentage }}%"></span></div></div></div>
+</section>
+<section class="content-card"><div class="card-heading"><div><h2>Recent tasks</h2><p class="muted">Your latest updates at a glance</p></div><a class="text-link" href="/tasks">View all →</a></div>{% include 'task_list.html' %}</section>
+{% endblock %}

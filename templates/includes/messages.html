@@ -1,0 +1,3 @@
+{% if request.query_params.get('message') %}
+<div class="flash success" role="status">✓ {{ request.query_params.get('message') }}</div>
+{% endif %}

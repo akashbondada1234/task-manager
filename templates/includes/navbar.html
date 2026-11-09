@@ -1,0 +1,14 @@
+<aside class="sidebar">
+    <a class="brand" href="/" aria-label="TaskFlow home"><span class="brand-mark">✓</span><span>TaskFlow</span></a>
+    <div class="sidebar-label">Workspace</div>
+    <nav class="nav-links">
+        <a class="nav-link {% if active_page == 'dashboard' %}active{% endif %}" href="/"><span>▦</span> Dashboard</a>
+        <a class="nav-link {% if active_page == 'tasks' %}active{% endif %}" href="/tasks"><span>☷</span> All tasks</a>
+        <a class="nav-link" href="/tasks?status_filter=Pending"><span>◷</span> Pending</a>
+        <a class="nav-link" href="/tasks?status_filter=Completed"><span>✓</span> Completed</a>
+    </nav>
+    <div class="sidebar-bottom">
+        <a class="create-nav" href="/tasks/new"><span>＋</span> Create task</a>
+        <div class="tip-card"><span class="tip-icon">✦</span><strong>Stay focused</strong><p>Small steps every day lead to big results.</p></div>
+    </div>
+</aside>
